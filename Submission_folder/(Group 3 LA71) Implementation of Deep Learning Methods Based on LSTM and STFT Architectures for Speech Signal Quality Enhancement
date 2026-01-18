@@ -1,0 +1,43 @@
+#Implementation of Deep Learning Methods Based on LSTM and STFT Architectures for Speech Signal Quality Enhancement
+
+**Team Members (BINUS ASO School of Engineering):**
+* Gabriel Ruben Weslie
+* Jordan Elishua Wibowo
+* Rizky Kresnanto Dananjaya
+* Takeshi Gobstan Lee
+
+---
+
+### 1. Description of the Project
+This project focuses on addressing noise interference in speech communication systems. We implemented a Deep Learning approach using a **Long Short-Term Memory (LSTM)** network combined with **Digital Signal Processing (STFT/ISTFT)** techniques. The system is designed to perform **Direct Spectral Mapping**, predicting the magnitude of clean speech from noisy input signals to enhance audio clarity and intelligibility.
+
+### 2. About the Dataset
+The model was trained and evaluated using the **VoiceBank-DEMAND** dataset (Valentini-Botinhao, 2017).
+* **Content:** Paired recordings of clean speech and noisy speech.
+* **Characteristics:** Contains various environmental noise types (traffic, cafeteria, park) mixed at different Signal-to-Noise Ratios (SNR), providing a robust testing ground for speech enhancement algorithms.
+
+### 3. Methodology
+The processing pipeline consists of three main stages:
+1.  **Pre-processing:** Input audio is downsampled to **16 kHz** to optimize computational efficiency. Features are extracted using the **Short-Time Fourier Transform (STFT)** with a frame length of 512 and hop length of 256.
+2.  **Model Architecture:** A Stacked LSTM network (2 layers, 256 units each) is used to learn the temporal correlations of speech. The model performs **regression** to directly estimate the clean magnitude spectrogram from the noisy magnitude.
+3.  **Reconstruction:** The enhanced waveform is reconstructed using the Inverse STFT (ISTFT). Note that the system utilizes the **original noisy phase** for reconstruction.
+
+### 4. Analysis
+The model demonstrates significant capability in suppressing background noise while preserving speech formants.
+
+* **Quantitative Results:**
+    * Average Input SNR: **8.51 dB**
+    * Average Output SNR: **14.83 dB**
+    * **SNR Gain:** **+6.32 dB**
+
+* **Discussion:**
+    While the final SNR (14.83 dB) is constrained by the **16 kHz downsampling** (limiting high-frequency resolution) and the use of **noisy phase** reconstruction, the **Gain of +6.32 dB** indicates a substantial improvement in signal quality. Visual analysis of spectrograms confirms that non-stationary noise components are effectively removed.
+
+### 5. Link Code and Documentation
+The project is organized into two main directories for clarity:
+* **Source Code (Notebooks):** [👉 View /src folder]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/src
+* **Documentation (Paper & Poster):** [👉 View /docs folder]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/docs
+
+### 6. Link of PPT File
+Direct link to the presentation slides:
+* **Presentation Slides:** [👉 View PPT.pdf]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/blob/main/docs/PPT%20UAS%20Machine%20Learning.pdf
