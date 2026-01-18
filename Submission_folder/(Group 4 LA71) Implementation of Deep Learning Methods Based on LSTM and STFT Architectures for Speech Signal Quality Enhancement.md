@@ -1,6 +1,6 @@
 # Implementation of Deep Learning Methods Based on LSTM and STFT Architectures for Speech Signal Quality Enhancement
 
-**Team Members (Binus ASO School of Engineering):**
+**Team Members (BINUS ASO School of Engineering):**
 * Gabriel Ruben Weslie
 * Jordan Elishua Wibowo
 * Rizky Kresnanto Dananjaya
