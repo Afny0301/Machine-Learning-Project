@@ -35,9 +35,9 @@ The model demonstrates significant capability in suppressing background noise wh
 
 ### 5. Link Code and Documentation
 The project is organized into two main directories for clarity:
-* Source Code (Notebooks): [👉 View /src folder]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/src
-* Documentation (Paper, Poster, PPT, and Video): [👉 View /docs folder]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/docs
+* Source Code (Notebooks): https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/src
+* Documentation (Paper, Poster, PPT, and Video): https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/tree/main/docs
 
 ### 6. Link of PPT File
 Direct link to the presentation slides:
-* Presentation Slides: [👉 View PPT.pdf]https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/blob/main/docs/PPT%20UAS%20Machine%20Learning.pdf
+* Presentation Slides: https://github.com/GabrielRubenWeslie/lstm-stft-speech-enhancement/blob/main/docs/PPT%20UAS%20Machine%20Learning.pdf
